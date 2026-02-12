@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <title>Introduction to HTML</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
+
     <header role="banner">
       <h1>Comp 484</h1>
       <h2>Introduction to HTML</h2>
+
       <nav role="navigation">
-        <p>
-          <a href="index.html" title="Introduction to HTML"
-            >Introduction to HTML</a
-          >
-        </p>
-        <p><a href="syntax.html" title="HTML syntax">HTML syntax</a></p>
-        <p>
-          <a href="structure.html" title="Structuring pages"
-            >Structuring pages</a
-          >
-        </p>
-        <p><a href="links.html" title="Creating links">Creating links</a></p>
-        <p>
-          <a href="reference.html" title="HTML Reference">HTML reference</a>
-        </p>
-        <p><a href="next.html" title="Next steps">Next steps</a></p>
+        <ul> 
+          <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+          <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+          <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+          <li><a href="links.html" title="Creating links">Creating links</a></li>
+          <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+          <li><a href="next.html" title="Next steps">Next steps</a></li>
+        </ul>
       </nav>
+
     </header>
+
     <main role="main">
       <article role="article">
+
         <header>
           <p>
             <img
@@ -38,7 +37,8 @@
               width="310"
               height="375"
               class="flowRight"
-            />HTML, or <b>Hypertext Markup Language</b>, is the language used to
+            />
+            HTML, or <b>Hypertext Markup Language</b>, is the language used to
             describe the structure of content on the web. As with other markup
             languages, it uses tags to identify page elements and describe the
             page&rsquo;s semantic structure. An easy way to visualize this is to
@@ -53,8 +53,10 @@
             elements like headings and paragraphs.
           </p>
         </header>
+
         <section>
           <h3>History</h3>
+
           <p>
             HTML can trace its roots back to 1989 at <b>CERN</b>, the European
             Laboratory for Particle Physics. There, Tim Berners-Lee came up with
@@ -69,6 +71,7 @@
             Although the world didn&rsquo;t quite realize it yet, the World Wide
             Web was born.
           </p>
+
           <p>
             As the popularity of the web increased in the early 90s, HTML
             underwent a series of rapid changes. Browser manufacturers like
@@ -82,6 +85,7 @@
             had a major impact in stabilizing the HTML standard and reducing the
             uneven implementations that had plagued earlier browsers.
           </p>
+
           <p>
             This resulted in the HTML 4.0 specification being released in 1998.
             It was the most stable version of HTML up to that point, and
@@ -89,6 +93,7 @@
             It&rsquo;s still the most widely used version of HTML and remains
             the baseline for authors and implementers alike.
           </p>
+
           <p>
             Around the time that HTML 4.0 was published, a movement began to
             evolve HTML towards a more flexible style of markup language.
@@ -107,6 +112,7 @@
             were seen to be dictating the presentation of content rather than
             the structure of it.
           </p>
+
           <p>
             <img
               src="images/W3C_Icon.png"
@@ -121,6 +127,7 @@
             specification languished for years in the W3C before its charter was
             revoked in 2009, essentially ending development.
           </p>
+
           <p>
             While the W3C was taking HTML down the XHTML path, a group of
             authors, developers, and organizations became frustrated with the
@@ -138,47 +145,78 @@
             standard, they&rsquo;ve removed the version number and simply refer
             to it as &ldquo;HTML.&rdquo;
           </p>
+
         </section>
+
         <section>
           <h3>HTML timeline</h3>
-          <p>
-            <b>1991</b>: Tim Berners-Lee publishes &ldquo;HTML Tags&rdquo; which
-            describes the initial 18 elements of HTML
-          </p>
-          <p>
-            <b>1992</b>: NCSA develops the Mosaic browser, which will eventually
-            evolve into Netscape
-          </p>
-          <p>
-            <b>1994</b>: The Internet Engineering Task Force (IETF) creates an
-            HTML working group to develop HTML specifications. Later that year
-            the W3C was created to foster an open standards environment
-          </p>
-          <p><b>1995</b>: HTML 2.0 specification is published</p>
-          <p>
-            <b>1995</b>: Microsoft releases Internet Explorer to compete with
-            Netscape
-          </p>
-          <p><b>1997</b>: HTML 3.2 specification is published</p>
-          <p><b>1997</b>: HTML 4.0 specification is published</p>
-          <p><b>2000</b>: XHTML 1.0 is published as a W3C recommendation</p>
-          <p><b>2004</b>: The WHATWG forms to continue work on HTML</p>
-          <p>
-            <b>2006</b>: W3C announces it will work with the WHATWG on HTML5
-          </p>
-          <p><b>2009</b>: XHTML Working Group charter expires</p>
-          <p>
-            <b>2012</b>: W3C and WHATWG announce they will develop the HTML5
-            standard separately
-          </p>
+
+          <ol> 
+            <li>
+              <b>1991</b>: Tim Berners-Lee publishes &ldquo;HTML Tags&rdquo; which
+              describes the initial 18 elements of HTML
+            </li>
+
+            <li>
+              <b>1992</b>: NCSA develops the Mosaic browser, which will eventually
+              evolve into Netscape
+            </li>
+            
+            <li>
+              <b>1994</b>: The Internet Engineering Task Force (IETF) creates an
+              HTML working group to develop HTML specifications. Later that year
+              the W3C was created to foster an open standards environment
+            </li>
+
+            <li><b>1995</b>: HTML 2.0 specification is published</li>
+
+            <li>
+              <b>1995</b>: Microsoft releases Internet Explorer to compete with
+              Netscape
+            </li>
+
+            <li>
+              <b>1997</b>: HTML 3.2 specification is published
+            </li>
+
+            <li>
+              <b>1997</b>: HTML 4.0 specification is published
+            </li>
+
+            <li>
+              <b>2000</b>: XHTML 1.0 is published as a W3C recommendation
+            </li>
+
+            <li>
+              <b>2004</b>: The WHATWG forms to continue work on HTML
+            </li>
+
+            <li>
+              <b>2006</b>: W3C announces it will work with the WHATWG on HTML5
+            </li>
+
+            <li>
+              <b>2009</b>: XHTML Working Group charter expires
+            </li>
+
+            <li>
+              <b>2012</b>: W3C and WHATWG announce they will develop the HTML5
+              standard separately
+            </li>
+          </ol>
+
         </section>
+
       </article>
     </main>
+
     <footer role="contentinfo">
       <p>
         <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
         18111 Nordhoff St Northridge, CA 91330
       </p>
     </footer>
+
   </body>
+
 </html>

@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <title>HTML Syntax</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
+
     <header role="banner">
       <h1>Comp 484</h1>
       <h2>HTML Syntax</h2>
+
       <nav role="navigation">
-        <p>
-          <a href="index.html" title="Introduction to HTML"
-            >Introduction to HTML</a
-          >
-        </p>
-        <p><a href="syntax.html" title="HTML syntax">HTML syntax</a></p>
-        <p>
-          <a href="structure.html" title="Structuring pages"
-            >Structuring pages</a
-          >
-        </p>
-        <p><a href="links.html" title="Creating links">Creating links</a></p>
-        <p>
-          <a href="reference.html" title="HTML Reference">HTML reference</a>
-        </p>
-        <p><a href="next.html" title="Next steps">Next steps</a></p>
+        <ul> 
+          <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+          <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+          <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+          <li><a href="links.html" title="Creating links">Creating links</a></li>
+          <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+          <li><a href="next.html" title="Next steps">Next steps</a></li>
+        </ul>
       </nav>
     </header>
+
     <main role="main">
       <article role="article">
+
         <header>
           <p>
             Because HTML is often the people&rsquo;s first experience with
@@ -39,8 +37,11 @@
             the same day.
           </p>
         </header>
+
         <section>
+
           <h3>A markup language</h3>
+
           <p>
             HTML is a markup language. That means that content on the page is
             &ldquo;marked up&rdquo; by tags which identify the content inside of
@@ -49,7 +50,9 @@
             and the &ldquo;&lt;/p&gt;&rdquo; closing tag at the end of a
             paragraph. The full paragraph would look like this:
           </p>
+
           <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
           <p>
             Tags consist of a left-angle bracket (&lt;) followed by a character
             or characters that identify the tag (the &ldquo;p&rdquo; for
@@ -62,9 +65,12 @@
             part any element that contains content inside the opening and
             closing tags also requires a closing tag.
           </p>
+
         </section>
+
         <section>
           <h3>Basic document structure</h3>
+
           <p>
             The core of all HTML documents revolves around three basic tags.
             First, an html tag (&lt;html&gt;) is required to identify the
@@ -82,6 +88,7 @@
             tables, and other content will be located here. At its most basic,
             an HTML file would look like this:
           </p>
+
           <pre><code>
 &lt;html&gt;     
      &lt;head&gt;
@@ -89,10 +96,14 @@
      &lt;body&gt;
      &lt;/body&gt;
 &lt;/html&gt;
-  </code></pre>
+        </code></pre>
+        
         </section>
+
         <section>
+
           <h3>DOCTYPES</h3>
+
           <p>
             If you&rsquo;ve looked at HTML pages before, you&rsquo;ve probably
             noticed a long, somewhat intimidating tag just before the opening
@@ -109,25 +120,40 @@
             should be preceded by a doctype declaration. For more information on
             doctypes, and the history behind them, check out Mark
             Pilgrim&rsquo;s excellent section on doctypes from his
-            <em
-              ><a
+            <em>
+              <a
                 href="http://diveintohtml5.info/semantics.html#the-doctype"
                 title="Dive into HTML5"
-                >Dive Into HTML5</a
-              ></em
-            >
+                >Dive Into HTML5
+              </a>
+            </em>
             book. Here are some of the more common HTML doctypes:
           </p>
-          <h4 class="dtd">HTML 4.0 transitional</h4>
-          <pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></pre>
-          <h4 class="dtd">XHTML 1.0 Transitional</h4>
-          <pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></pre>
-          <h4 class="dtd">HTML5</h4>
-          <pre><code>&lt;!DOCTYPE HTML&gt;</code>
-</pre>
+
+          <dl>
+
+            <dt> <h4 class="dtd">HTML 4.0 transitional</h4> </dt>
+            <dd> 
+              <pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></pre> 
+            </dd>
+            
+            <dt> <h4 class="dtd">XHTML 1.0 Transitional</h4> </dt>
+            <dd> 
+              <pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></pre> 
+            </dd>
+            
+            <dt> <h4 class="dtd">HTML5</h4> </dt>
+            <dd> 
+              <pre><code>&lt;!DOCTYPE HTML&gt;</code></pre> 
+            </dd>
+            
+          </dl>
+
         </section>
+
         <section>
           <h3>Element attributes</h3>
+
           <p>
             Some elements can be enhanced through the use of attributes.
             Attributes allow you to provide more information or additional
@@ -137,10 +163,14 @@
             syntax varies based on the version of HTML you&rsquo;re using,
             it&rsquo;s standard practice to put values within quotation marks.
           </p>
+
           <pre><code>&lt;h1 class=&rdquo;headline&rdquo;&gt;Article&rsquo;s main headline&lt;/h1&gt;</code></pre>
+
         </section>
+
         <section>
           <h3>Replaced elements</h3>
+
           <p>
             Some HTML elements represent content that is replaced by an outside
             resource such as an image, form control, or a video file. These
@@ -149,10 +179,14 @@
             elements will have attributes that tell the browser where to find an
             external resource like an image or video.
           </p>
+
           <pre><code>&lt;img src=&ldquo;photo.jpg&rdquo; alt=&ldquo;my awesome photo&rdquo;&gt;&nbsp;</code></pre>
+
         </section>
+
         <section>
           <h3>Code structure</h3>
+          
           <p>
             HTML documents create structure by nesting elements inside of one
             another. You might group a section of page content together by
@@ -162,13 +196,16 @@
             <br />
             This syntax, for example, would be <em>incorrect</em>:
           </p>
+
           <pre
             class="wrong"
           ><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/p&gt;&lt;/strong&gt;</code></pre>
           <p>Rather, the correct syntax would be:</p>
+
           <pre
             class="correct"
           ><code>&lt;p&gt;You must close all nested tags &lt;strong&gt;first!&lt;/strong&gt;&lt;/p&gt;</code></pre>
+
           <p>
             HTML also has specific rules about which elements can be nested
             within other elements. A paragraph (&lt;p&gt;) for example,
@@ -193,12 +230,15 @@
             structured properly is to validate your code through a service like
             the
             <a href="http://validator.w3.org" title="W3C markup validator"
-              >W3C&rsquo;s Markup Validation service</a
-            >.
+              >W3C&rsquo;s Markup Validation service
+            </a>.
           </p>
+
         </section>
+        
         <section>
           <h3>Commenting code</h3>
+
           <p>
             Often it is helpful to leave notes to yourself or other developers
             within your code. Perhaps you want to remind yourself what a certain
@@ -209,11 +249,16 @@
             left-angle bracket, an exclamation point, and two hyphens (&lt;!--)
             and end with two hyphens followed by a right-angle bracket (--&gt;).
           </p>
+
           <h4>Comment syntax:</h4>
+
           <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+
         </section>
+
         <section>
           <h3>Using special characters</h3>
+
           <p>
             Certain characters are reserved in HTML, meaning that you
             shouldn&rsquo;t use them outside of their specific purpose. The
@@ -235,17 +280,21 @@
             <a
               href="http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references"
               title="Character entity reference"
-              >Wikipedia</a
-            >.
+              >Wikipedia
+            </a>.
           </p>
+
         </section>
+
       </article>
     </main>
+
     <footer role="contentinfo">
       <p>
         <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
         18111 Nordhoff St Northridge, CA 91330
       </p>
     </footer>
+
   </body>
 </html>
